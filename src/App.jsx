@@ -1,16 +1,15 @@
 // IMPORTS
-import reactLogo from "./assets/img/react.svg";
-import viteLogo from "/vite.svg";
-import Header from "./layout/Header";
-import Main from "./layout/Main";
-import Footer from "./layout/Footer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Homepage from "./pages/Homepage";
 
 export default function App() {
   return (
     <>
-      <Header />
-      <Main />
-      <Footer />
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<Homepage />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
