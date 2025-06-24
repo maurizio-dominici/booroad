@@ -15,7 +15,7 @@ export default function Homepage() {
                 startDate={trip.startDate}
                 endDate={trip.endDate}
                 participants={trip.participants}
-                link={`/detail/${trip.id}}`}
+                link={`/detail/${trip.id}`}
               />
             </div>
           );

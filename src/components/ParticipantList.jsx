@@ -1,5 +1,6 @@
 import ParticipantCard from "../components/ParticipantCard";
 export default function ParticipantList({ participants }) {
+  console.log(participants);
   return (
     <div className="container">
       <div className="row">
@@ -8,7 +9,7 @@ export default function ParticipantList({ participants }) {
           return (
             <div key={participant.id} className="col-4">
               <ParticipantCard
-                id={participant.id}
+                idParticipant={participant.id}
                 firstName={participant.firstName}
                 lastName={participant.lastName}
                 email={participant.email}
